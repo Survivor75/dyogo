@@ -7,7 +7,7 @@ const grams = 100.0
 
 type amu float64 
 
-// function float accepts value of type mass and returns a type of float64
+// function float accepts value of type mass and returns a type of float64 [?]
 func (mass amu) float() float64 { 
   return float64(mass) 
 } 
@@ -29,12 +29,12 @@ var metalloids = []metalloid{
   metalloid{"Polonium", 84, 209.0}, 
 } 
 
-// function moles accepts value of type mass and returns a type of float64
+// function moles accepts value of type mass and returns a type of float64 [?]
 func moles(mass amu) float64 { 
   return float64(mass) / grams 
 } 
 
-// function atoms accepts value of type float64 and returns a type of float64
+// function atoms accepts value of type float64 and returns a type of float64 [?]
 func atoms(moles float64) float64 { 
   return moles * avogadro 
 } 
