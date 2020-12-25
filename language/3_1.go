@@ -26,6 +26,20 @@ var USD = Currency{
     Country: "USA",  
     Number: 840} 
 
+func printCurr(number int) { 
+  if CAD.Number == number { 
+    fmt.Printf("Found: %+v\n", CAD) 
+  } else if FJD.Number == number { 
+    fmt.Printf("Found: %+v\n", FJD) 
+  } else if JMD.Number == number { 
+    fmt.Printf("Found: %+v\n", JMD) 
+  } else if USD.Number == number { 
+    fmt.Printf("Found: %+v\n", USD) 
+  } else { 
+    fmt.Println("No currency found with number", number) 
+  } 
+}
+
 /*
 The if Statement
 
@@ -45,19 +59,5 @@ func main() {
   if num1 := 388; num1 > 100 || num1 < 900 { 
   	fmt.Println("Currency:", num1) 
     printCurr(num1) 
-  } 
-} 
-
-func printCurr(number int) { 
-  if CAD.Number == number { 
-    fmt.Printf("Found: %+v\n", CAD) 
-  } else if FJD.Number == number { 
-    fmt.Printf("Found: %+v\n", FJD) 
-  } else if JMD.Number == number { 
-    fmt.Printf("Found: %+v\n", JMD) 
-  } else if USD.Number == number { 
-    fmt.Printf("Found: %+v\n", USD) 
-  } else { 
-    fmt.Println("No currency found with number", number) 
   } 
 }
