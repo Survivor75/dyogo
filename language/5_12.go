@@ -32,6 +32,13 @@ When a function panics, as explained earlier, it can crash an entire program. Th
 depending on your requirements. It is possible, however, to regain control after a panic sequence has started. 
 To do this, Go offers the built-in function called recover. Recover works in tandem with panic. A call to function 
 recover returns the value that was passed as an argument to panic.
+
+To be able to recover from an unwinding panic sequence, the code must make a deferred call to the recover function. 
+In the previous code, this is done in the makeAnagrams function by wrapping recover() inside an anonymous function 
+literal.
+
+When the deferred recover function is executed, the program has an opportunity to regain control and prevent the 
+panic from crashing the running program.
 */
 
 func main() { 
