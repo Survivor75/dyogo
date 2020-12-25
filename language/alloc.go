@@ -17,6 +17,8 @@ var (
 ) 
 
 /*
+Go Types
+
 When a program declares a variable, two things must take place:
 
 1. The variable must receive a type

@@ -33,6 +33,8 @@ DoSearch:
 }
 
 /*
+The break, continue and goto statements
+
 Here are some attributes of the label for the break statement to remember:
 
 1. The label must be declared within the same running function where the break statement is located.
