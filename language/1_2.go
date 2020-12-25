@@ -52,10 +52,10 @@ func (m metalloid) String() string {
 func main() { 
   fmt.Print(headers())
   for _, m := range metalloids { 
-    //   fmt.Printf( 
-    // "%-10s %-10d %-10.3f %e\n", 
-    //   m.name, m.number, m.weight.float(), atoms(moles(m.weight)), 
-    //   )
+      fmt.Printf( 
+    "%-10s %-10d %-10.3f %e\n", 
+      m.name, m.number, m.weight.float(), atoms(moles(m.weight)), 
+      )
       fmt.Print(m, "\n") 
     }
 
