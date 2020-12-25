@@ -27,7 +27,7 @@ var USD = Currency{
     Number: 840} 
 
 /*
-The IF Statement
+The if Statement
 
 The if statement supports a composite syntax where the tested expression is preceded by an initialization 
 statement. At runtime, the initialization is executed before the test expression is evaluated.
