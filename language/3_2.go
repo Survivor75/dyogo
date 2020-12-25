@@ -56,7 +56,7 @@ func isEuro(curr Curr) bool {
   } 
 } 
 /*
-SWITCH Statements
+switch Statements
 
 The expressions in case clauses are evaluated from left to right, top to bottom, until a value (or expression) is 
 found that is equal to that of the switch expression. Upon encountering the first case that matches the switch 
