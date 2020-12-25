@@ -7,8 +7,7 @@ import (
    "os" 
    "errors" 
 ) 
- 
-// sorts letters in a word (i.e. "morning" -> "gimnnor") 
+
 func sortRunes(str string) string { 
    runes := bytes.Runes([]byte(str)) 
    var temp rune 
@@ -23,8 +22,7 @@ func sortRunes(str string) string {
    } 
    return string(runes) 
 } 
- 
-// load loads content of file fname into memory as []string 
+
 func load(fname string) ([]string, error) { 
    if fname == "" { 
          return nil, errors.New( 

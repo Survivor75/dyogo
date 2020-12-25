@@ -23,7 +23,8 @@ When a program declares a variable, two things must take place:
 
 1. The variable must receive a type
 2. The variable will also be bound to a value (even when none is assigned)
-*/ 
+*/
+ 
 func main() { 
    fmt.Printf("a = %v [%T, %d bits]\n", a, a, unsafe.Sizeof(a)*8) 
    fmt.Printf("b = %v [%T, %d bits]\n", b, b, unsafe.Sizeof(b)*8) 

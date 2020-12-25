@@ -1,5 +1,7 @@
 package main 
 
+import "fmt"
+
 func write(fname string, anagrams map[string][]string) { 
    file, err := os.OpenFile( 
          fname,  

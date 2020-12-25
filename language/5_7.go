@@ -13,7 +13,8 @@ var (
    sqr = func(val int) int { 
          return mul(val, val) 
    } 
-) 
+)
+
 /*
 Closures
 
@@ -23,6 +24,7 @@ outside of their enclosing code block.
 In Go, lexically closed values can remain bounded to their closures long after the outer function that created the
 closure has gone out of scope. The garbage collector will handle cleanups as these closed values become unbounded.
 */
+
 func main() { 
    fmt.Printf("mul(25,7) = %d\n", mul(25, 7)) 
    fmt.Printf("sqr(13) = %d\n", sqr(13)) 

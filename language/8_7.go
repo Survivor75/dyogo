@@ -53,5 +53,4 @@ Implementing multiple interfaces
 The implicit mechanism of interfaces allows any named type to satisfy multiple interface types at once. This is 
 achieved simply by having the method set of a given type intersect with the methods of each interface type to be 
 implemented.
-
 */

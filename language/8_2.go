@@ -1,4 +1,5 @@
 package main
+
 import "fmt" 
 
 type gallon float64 
@@ -24,6 +25,7 @@ the code to dereference the original value to update it.
 Pointer receiver parameters are widely used in Go. This is because they make it possible to express object-like 
 primitives that can carry both state and behaviors.
 */
+
 func main() { 
   var gal gallon = 5 
   gal.half() 

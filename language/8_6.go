@@ -55,7 +55,6 @@ Subtyping with Go interfaces
 Earlier, during the discussion on objects, it was mentioned that Go favors composition (has-a) relationships when 
 building objects. While that is true, Go can also express "is-a" relationships among objects using subtyping via 
 interfaces.
-
 */
 
 func main() { 

@@ -78,8 +78,6 @@ variable is reassigned or passed in as a function parameter.
 The last topic on structs has to do with field tags. During the definition of a struct type, optional string values 
 may be added to each field declaration. The value of the string is arbitrary and it can serve as hints to tools or 
 other APIs that use reflection to consume the tags.
-
-
 */
 
 func main() {

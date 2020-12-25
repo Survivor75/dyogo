@@ -1,4 +1,5 @@
 package main 
+
 import "fmt" 
  
 func avg(nums ...float64) float64 { 

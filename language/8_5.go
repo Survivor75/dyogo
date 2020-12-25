@@ -30,5 +30,4 @@ used to list a set of methods that satisfies the interface.
 The interesting aspect of interfaces in Go is how they are implemented and ultimately used. Implementing a Go 
 interface is done implicitly. There is no separate element or keyword required to indicate the intent of 
 implementation. Any type that defines the method set of an interface type automatically satisfies its implementation.
-
 */

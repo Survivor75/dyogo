@@ -1,4 +1,5 @@
 package main 
+
 import "fmt" 
  
 func apply(nums []int, f func(int) int) func() { 

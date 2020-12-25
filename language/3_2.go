@@ -32,6 +32,7 @@ func isDollar(curr Curr) bool {
   } 
   return result 
 } 
+
 func isDollar2(curr Curr) bool { 
   dollars := []Curr{currencies[2], currencies[6], currencies[9]} 
   switch curr { 
@@ -55,6 +56,7 @@ func isEuro(curr Curr) bool {
     return false 
   } 
 } 
+
 /*
 switch Statements
 
@@ -71,6 +73,7 @@ type information. The type switch is a statement that uses the Go interface type
 information of values (or expressions).
 
 */ 
+
 func main() { 
   curr := Curr{"EUR", "Euro", "Italy", 978} 
   if isDollar(curr) { 
