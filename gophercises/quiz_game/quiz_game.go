@@ -16,20 +16,40 @@ func (s *stack) push(val int) {
 }
 
 func (s *stack) pop() {
+	*s = (*s)[:len(*s)-1]
 }
 
-func (s *stack) peek() {
+func (s *stack) peek() int {
+	return (*s)[len(*s)-1]
 }
 
 func evaluator(question string, answer int) bool {
 	fmt.Println(question, answer)
 	var stk stack = make([]int, 0)
+	var operator string
 	for _, element := range question {
 		if val, err := strconv.Atoi(string(element)); err == nil{
 			stk.push(val)
+		} else {
+			operator = string(element)
 		}
 	}
-	return true
+	operand1 := stk.peek()
+	stk.pop()
+	operand2 := stk.peek()
+	stk.pop()
+	switch operator {
+		case "+":
+			return operand1 + operand2 == answer
+		case "-":
+			return operand1 - operand2 == answer
+		case "*":
+			return operand1 * operand2 == answer
+		case "/":
+			return operand1 / operand2 == answer
+		default:
+			return false
+	}
 }
 
 func main() {
@@ -45,6 +65,6 @@ func main() {
 			log.Fatal(err)
 		}
 		answer, _ := strconv.Atoi(string(record[1]))
-		evaluator(record[0], answer)
+		fmt.Println(evaluator(record[0], answer))
 	}
 }
